@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS EmployeeDetails (
+EmpID int (3),
+FullName varchar (50),
+ManagerId int (3),
+DateOfJoining varchar (10)
+CHECK(DateOfJoining LIKE '%/%/%'),
+City varchar (50),
+PRIMARY KEY (EmpID)
+
+);
+
