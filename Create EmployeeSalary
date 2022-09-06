@@ -1,0 +1,15 @@
+CREATE TABLE IF NOT EXISTS EmployeeSalary (
+EmpID int (3),
+Project varchar (2),
+Salary int (10),
+Variable int (10),
+FOREIGN KEY(EmpID) REFERENCES EmployeeDetails(EmpID)
+
+);
+
+INSERT INTO EmployeeSalary VALUES
+('121', 'P1', '8000', '500'),
+('321', 'P2', '10000', '1000'),
+('421', 'P1', '12000', '0');
+
+
